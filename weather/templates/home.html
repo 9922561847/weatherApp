@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>WEATHER APP</title>
+</head>
+<body>
+
+    <h1>Find the Weather </h1>
+<form method="get">
+    <label for="city"></label>
+    <input type="text" name="city" id="city" placeholder="Type City Name"><br>
+    <input type="submit" value="Click here to check Weather">
+</form>
+{% if weather %}
+    <h3>{{weather.region}}</h3><br>
+        <h3>{{weather.daytime}}</h3><br>
+
+        <h3>{{weather.status}}</h3><br>
+    <h3>{{weather.temp}}</h3><br>
+
+{% endif %}
+
+
+
+</body>
+</html>
